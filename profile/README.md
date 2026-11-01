@@ -51,13 +51,12 @@ The platform is maintained as a collection of focused, open-source repositories 
 
 | Repository | Description | Key Technologies |
 | :--- | :--- | :--- |
-| **timecraft-desktop-linux** | Primary desktop application, administrative dashboard, and settings interface | Tauri v2, Rust, SolidJS, SQLite |
-| **timecraft-wayland-tracker** | Background system service capturing active window sessions on Wayland | Python 3, D-Bus, SQLite (WAL) |
-| **gnome-shell-extension-focused-window** | Native GNOME Shell bridge reporting active window metadata to session D-Bus | JavaScript (GJS, ESM), Mutter API |
-| **timecraft-relay-server** | Lightweight, stateless WebSocket router for local and remote device synchronization | Bun, Hono, Redis |
-| **timecraft-pwa** | Mobile companion web application for parents and children | SolidJS, Vite, WebCrypto, PWA |
-| **timecraft-ts-shared** | Shared domain contracts, message envelopes, and schema definitions | TypeScript, Zod |
-| **timecraft-community-presets** | Open catalog of application categorization rules and daily schedule templates | JSON Schema, Declarative Rules |
+| [**timecraft-desktop-linux**](https://github.com/family-timecraft/timecraft-desktop-linux) | Primary desktop application, administrative dashboard, and settings interface | Tauri v2, Rust, SolidJS, SQLite |
+| [**timecraft-wayland-tracker**](https://github.com/family-timecraft/timecraft-wayland-tracker) | Background system service capturing active window sessions on Wayland | Python 3, D-Bus, SQLite (WAL) |
+| [**gnome-shell-extension-focused-window**](https://github.com/family-timecraft/gnome-shell-extension-focused-window) | Native GNOME Shell bridge reporting active window metadata to session D-Bus | JavaScript (GJS, ESM), Mutter API |
+| [**timecraft-ts-shared**](https://github.com/family-timecraft/timecraft-ts-shared) | Shared domain contracts, message envelopes, and schema definitions | TypeScript, Zod |
+| [**timecraft-ui-shared**](https://github.com/family-timecraft/timecraft-ui-shared) | Shared SolidJS UI component library for the TimeCraft clients | SolidJS, TypeScript |
+| [**timecraft-community-presets**](https://github.com/family-timecraft/timecraft-community-presets) | Open catalog of application categorization rules and daily schedule templates | JSON Schema, Declarative Rules |
 
 ---
 
@@ -90,6 +89,12 @@ To monitor and approve tasks from a smartphone:
 
 TimeCraft is dedicated to digital sovereignty and user freedom:
 
-* **Desktop Application and Core Services**: Licensed under the **GNU Affero General Public License v3.0 (AGPL-3.0)** to protect against proprietary cloud exploitation.
-* **GNOME Shell Integration**: Licensed under **GPL-2.0-or-later** in compliance with upstream GNOME Shell standards.
-* **Community Presets and Schemas**: Dedicated to the public domain under **MIT / CC0-1.0** for unrestricted sharing and community contribution.
+* **Desktop Application, Session Daemon, and Shared Libraries** (`timecraft-desktop-linux`, `timecraft-wayland-tracker`, `timecraft-ts-shared`, `timecraft-ui-shared`): Licensed under the **GNU Affero General Public License v3.0 (AGPL-3.0)** to protect against proprietary cloud exploitation.
+* **GNOME Shell Integration** (`gnome-shell-extension-focused-window`): Licensed under **GPL-2.0-or-later** in compliance with upstream GNOME Shell standards.
+* **Community Presets and Schemas** (`timecraft-community-presets`): Preset, rule, and schedule data and their schemas are dedicated to the public domain under **CC0-1.0**; tooling code is licensed under the **MIT License**.
+
+---
+
+## Contributing
+
+Code contributions are not currently accepted; suggestions, bug reports, and comments are welcome. Use the issue forms in the affected repository to file feedback — see the [contributing guide](https://github.com/family-timecraft/.github/blob/main/CONTRIBUTING.md) and the [code of conduct](https://github.com/family-timecraft/.github/blob/main/CODE_OF_CONDUCT.md). Security-sensitive reports follow the [security policy](https://github.com/family-timecraft/.github/blob/main/SECURITY.md).
