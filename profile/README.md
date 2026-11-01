@@ -15,16 +15,19 @@ Rather than functioning as restrictive surveillance software or cloud-connected 
 ## Core Pillars for Families
 
 ### 1. Data Sovereignty and Zero-Telemetry Privacy
+
 * **Local-First Storage**: All detailed application usage logs, active window titles, and session histories reside exclusively on your home computer in local SQLite databases.
 * **No Cloud Surveillance**: Browsing habits, private window titles, and personal activity logs are never transmitted to corporate servers, commercial analytics platforms, or external clouds.
 * **GDPR Privacy by Design**: Fully compliant with European privacy regulations (GDPR Article 25) regarding data minimization for minors.
 
 ### 2. Partnership and Positive Reinforcement
+
 * **Collaborative Agreements**: Replaces arbitrary lockouts and secret monitoring with explicit family rules and clear daily allowances.
 * **Task Engine and Bonus Time**: Children view their daily checklist and submit tasks for confirmation. Completed tasks immediately unlock bonus screen time.
 * **Permanent Coin Economy**: Tasks can also award virtual coins that never expire overnight. Children can save coins in their personal wallet, fostering patience, budgeting skills, and long-term goal setting.
 
 ### 3. Seamless Cross-Device Supervision
+
 * **Instant Mobile Companion**: Parents and children can access the platform from any smartphone or tablet via an installable Progressive Web Application (PWA).
 * **Stateless Synchronization**: Remote interactions (approving tasks, granting extra time, viewing current status) route through an encrypted, stateless relay. The server acts purely as a real-time router and retains zero personal family data.
 
@@ -46,13 +49,12 @@ The platform is maintained as a collection of focused, open-source repositories 
 
 | Repository | Description | Key Technologies |
 | :--- | :--- | :--- |
-| **timecraft-desktop-linux** | Primary desktop application, administrative dashboard, and settings interface | Tauri v2, Rust, SolidJS, SQLite |
-| **timecraft-wayland-tracker** | Background system service capturing active window sessions on Wayland | Python 3, D-Bus, SQLite (WAL) |
-| **gnome-shell-extension-focused-window** | Native GNOME Shell bridge reporting active window metadata to session D-Bus | JavaScript (GJS, ESM), Mutter API |
-| **timecraft-relay-server** | Lightweight, stateless WebSocket router for local and remote device synchronization | Bun, Hono, Redis |
-| **timecraft-pwa** | Mobile companion web application for parents and children | SolidJS, Vite, WebCrypto, PWA |
-| **timecraft-ts-shared** | Shared domain contracts, message envelopes, and schema definitions | TypeScript, Zod |
-| **timecraft-community-presets** | Open catalog of application categorization rules and daily schedule templates | JSON Schema, Declarative Rules |
+| [**timecraft-desktop-linux**](https://github.com/family-timecraft/timecraft-desktop-linux) | Primary desktop application, administrative dashboard, and settings interface | Tauri v2, Rust, SolidJS, SQLite |
+| [**timecraft-wayland-tracker**](https://github.com/family-timecraft/timecraft-wayland-tracker) | Background system service capturing active window sessions on Wayland | Python 3, D-Bus, SQLite (WAL) |
+| [**gnome-shell-extension-focused-window**](https://github.com/family-timecraft/gnome-shell-extension-focused-window) | Native GNOME Shell bridge reporting active window metadata to session D-Bus | JavaScript (GJS, ESM), Mutter API |
+| [**timecraft-ts-shared**](https://github.com/family-timecraft/timecraft-ts-shared) | Shared domain contracts, message envelopes, and schema definitions | TypeScript, Zod |
+| [**timecraft-ui-shared**](https://github.com/family-timecraft/timecraft-ui-shared) | Shared SolidJS UI component library for the TimeCraft clients | SolidJS, TypeScript |
+| [**timecraft-community-presets**](https://github.com/family-timecraft/timecraft-community-presets) | Open catalog of application categorization rules and daily schedule templates | JSON Schema, Declarative Rules |
 
 ---
 
@@ -85,6 +87,12 @@ To monitor and approve tasks from a smartphone:
 
 TimeCraft is dedicated to digital sovereignty and user freedom:
 
-* **Desktop Application and Core Services**: Licensed under the **GNU Affero General Public License v3.0 (AGPL-3.0)** to protect against proprietary cloud exploitation.
-* **GNOME Shell Integration**: Licensed under **GPL-2.0-or-later** in compliance with upstream GNOME Shell standards.
-* **Community Presets and Schemas**: Dedicated to the public domain under **MIT / CC0-1.0** for unrestricted sharing and community contribution.
+* **Desktop Application, Session Daemon, and Shared Libraries** (`timecraft-desktop-linux`, `timecraft-wayland-tracker`, `timecraft-ts-shared`, `timecraft-ui-shared`): Licensed under the **GNU Affero General Public License v3.0 (AGPL-3.0)** to protect against proprietary cloud exploitation.
+* **GNOME Shell Integration** (`gnome-shell-extension-focused-window`): Licensed under **GPL-2.0-or-later** in compliance with upstream GNOME Shell standards.
+* **Community Presets and Schemas** (`timecraft-community-presets`): Preset, rule, and schedule data and their schemas are dedicated to the public domain under **CC0-1.0**; tooling code is licensed under the **MIT License**.
+
+---
+
+## Contributing
+
+Code contributions are not currently accepted; suggestions, bug reports, and comments are welcome. Use the issue forms in the affected repository to file feedback — see the [contributing guide](https://github.com/family-timecraft/.github/blob/main/CONTRIBUTING.md) and the [code of conduct](https://github.com/family-timecraft/.github/blob/main/CODE_OF_CONDUCT.md). Security-sensitive reports follow the [security policy](https://github.com/family-timecraft/.github/blob/main/SECURITY.md).
