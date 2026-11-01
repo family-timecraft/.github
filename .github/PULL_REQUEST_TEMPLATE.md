@@ -1,9 +1,9 @@
 # Pull Request
 
-> **Contribution policy:** Code contributions are not currently accepted;
-> suggestions, bug reports, and comments are welcome. Pull requests carrying
-> unsolicited code will not be merged — maintainers may convert them into
-> issues so the idea is not lost.
+**Contribution policy:** Code contributions are not currently accepted;
+suggestions, bug reports, and comments are welcome. Pull requests carrying
+unsolicited code will not be merged — maintainers may convert them into
+issues so the idea is not lost.
 
 ## For maintainer-initiated work
 
