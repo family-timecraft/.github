@@ -1,0 +1,56 @@
+name: Suggestion
+description: Suggest an improvement, new feature, preset, or idea
+title: "[suggestion]: "
+labels: ["type: suggestion"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Suggestions are welcome and are the primary way to shape TimeCraft.
+        *Note*: Code contributions are not currently accepted; suggestions, bug reports, and comments are welcome. Maintainers implement accepted suggestions.
+  - type: dropdown
+    id: repository
+    attributes:
+      label: Affected Component
+      description: Where would this suggestion land?
+      options:
+        - timecraft-desktop-linux (Desktop application)
+        - timecraft-wayland-tracker (Session tracking daemon)
+        - gnome-shell-extension-focused-window (GNOME Shell extension)
+        - timecraft-ts-shared (Shared contracts & schemas)
+        - timecraft-ui-shared (Shared UI library)
+        - timecraft-community-presets (Preset catalog)
+        - Not sure / cross-cutting
+    validations:
+      required: true
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem to Solve
+      description: Describe the family workflow or friction this addresses, before describing a solution.
+      placeholder: As a parent/child using TimeCraft, I cannot ... which means ...
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposed Solution
+      description: How should TimeCraft behave instead?
+      placeholder: It would work better if ...
+    validations:
+      required: true
+  - type: textarea
+    id: acceptance_criteria
+    attributes:
+      label: Acceptance Criteria
+      description: How would we know the suggestion is fulfilled?
+      placeholder: e.g., Given ..., when ..., then ...
+    validations:
+      required: false
+  - type: textarea
+    id: context
+    attributes:
+      label: Additional Context
+      description: Alternatives considered, screenshots, or related issues.
+    validations:
+      required: false

@@ -1,0 +1,74 @@
+name: Bug Report
+description: Report a reproducible defect, crash, or regression in a TimeCraft component
+title: "[bug]: "
+labels: ["type: bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thank you for reporting an issue. Please provide sufficient technical details to isolate and reproduce the defect.
+        *Note*: For security-sensitive reports, use private vulnerability reporting instead (see SECURITY.md).
+  - type: dropdown
+    id: repository
+    attributes:
+      label: Affected Component
+      options:
+        - timecraft-desktop-linux (Desktop application)
+        - timecraft-wayland-tracker (Session tracking daemon)
+        - gnome-shell-extension-focused-window (GNOME Shell extension)
+        - timecraft-ts-shared (Shared contracts & schemas)
+        - timecraft-ui-shared (Shared UI library)
+        - timecraft-community-presets (Preset catalog)
+    validations:
+      required: true
+  - type: dropdown
+    id: severity
+    attributes:
+      label: Severity
+      options:
+        - "P0 (Crash / Data Loss / Security Violation)"
+        - "P1 (Core Feature Malfunction)"
+        - "P2 (Minor Functional Glitch)"
+        - "P3 (Cosmetic / UI Alignment)"
+    validations:
+      required: true
+  - type: textarea
+    id: environment
+    attributes:
+      label: Operating Environment
+      description: Specify Linux distribution, desktop environment, display server, and component version.
+      value: |
+        - OS / Distro:
+        - Display Server: Wayland
+        - Desktop Environment: GNOME Shell
+        - Component Version / Git Commit:
+    validations:
+      required: true
+  - type: textarea
+    id: reproduction_steps
+    attributes:
+      label: Steps to Reproduce
+      description: Precise sequential instructions to reproduce the defect.
+      placeholder: |
+        1. Start the session daemon with ...
+        2. Launch the desktop application ...
+        3. Switch the focused window to ...
+        4. Observe unexpected behavior ...
+    validations:
+      required: true
+  - type: textarea
+    id: expected_vs_actual
+    attributes:
+      label: Expected vs. Actual Behavior
+      description: What was expected to occur versus what actually took place?
+      placeholder: Expected behavior: ... Actual behavior: ...
+    validations:
+      required: true
+  - type: textarea
+    id: diagnostic_logs
+    attributes:
+      label: Diagnostic Logs / Terminal Output
+      description: Attach relevant terminal traces, journalctl logs, or console errors.
+      render: shell
+    validations:
+      required: false
