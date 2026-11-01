@@ -2,6 +2,8 @@
 
 An Open-Source, Privacy-Preserving Digital Wellbeing Platform for Modern Linux
 
+## Coming soon
+
 ---
 
 ## Overview
@@ -15,16 +17,19 @@ Rather than functioning as restrictive surveillance software or cloud-connected 
 ## Core Pillars for Families
 
 ### 1. Data Sovereignty and Zero-Telemetry Privacy
+
 * **Local-First Storage**: All detailed application usage logs, active window titles, and session histories reside exclusively on your home computer in local SQLite databases.
 * **No Cloud Surveillance**: Browsing habits, private window titles, and personal activity logs are never transmitted to corporate servers, commercial analytics platforms, or external clouds.
 * **GDPR Privacy by Design**: Fully compliant with European privacy regulations (GDPR Article 25) regarding data minimization for minors.
 
 ### 2. Partnership and Positive Reinforcement
+
 * **Collaborative Agreements**: Replaces arbitrary lockouts and secret monitoring with explicit family rules and clear daily allowances.
 * **Task Engine and Bonus Time**: Children view their daily checklist and submit tasks for confirmation. Completed tasks immediately unlock bonus screen time.
 * **Permanent Coin Economy**: Tasks can also award virtual coins that never expire overnight. Children can save coins in their personal wallet, fostering patience, budgeting skills, and long-term goal setting.
 
 ### 3. Seamless Cross-Device Supervision
+
 * **Instant Mobile Companion**: Parents and children can access the platform from any smartphone or tablet via an installable Progressive Web Application (PWA).
 * **Stateless Synchronization**: Remote interactions (approving tasks, granting extra time, viewing current status) route through an encrypted, stateless relay. The server acts purely as a real-time router and retains zero personal family data.
 
