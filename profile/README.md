@@ -95,6 +95,6 @@ TimeCraft is dedicated to digital sovereignty and user freedom:
 
 ---
 
-## Contributing
+## Feedback & Bug Reports
 
-Code contributions are not currently accepted; suggestions, bug reports, and comments are welcome. Use the issue forms in the affected repository to file feedback — see the [contributing guide](https://github.com/family-timecraft/.github/blob/main/CONTRIBUTING.md) and the [code of conduct](https://github.com/family-timecraft/.github/blob/main/CODE_OF_CONDUCT.md). Security-sensitive reports follow the [security policy](https://github.com/family-timecraft/.github/blob/main/SECURITY.md).
+Code contributions are not currently accepted; suggestions, bug reports, and comments are welcome. Use the issue forms in the affected repository to file feedback — see the [support guide](https://github.com/family-timecraft/.github/blob/main/SUPPORT.md) for writing effective bug reports and suggestions. Organization-wide policy (commit conventions, review hygiene, linking rules) is documented in the [contributing guide](https://github.com/family-timecraft/.github/blob/main/CONTRIBUTING.md); participation is governed by the [code of conduct](https://github.com/family-timecraft/.github/blob/main/CODE_OF_CONDUCT.md). Security-sensitive reports follow the [security policy](https://github.com/family-timecraft/.github/blob/main/SECURITY.md).
