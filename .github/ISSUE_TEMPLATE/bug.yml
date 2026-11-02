@@ -32,16 +32,47 @@ body:
         - "P3 (Cosmetic / UI Alignment)"
     validations:
       required: true
+  - type: input
+    id: component_version
+    attributes:
+      label: Component Version / Git Commit
+      description: The release version or the commit hash where the defect occurs.
+      placeholder: e.g. v0.3.0 or 9f3a1c2
+    validations:
+      required: true
   - type: textarea
     id: environment
     attributes:
       label: Operating Environment
-      description: Specify Linux distribution, desktop environment, display server, and component version.
-      value: |
-        - OS / Distro:
-        - Display Server: Wayland
-        - Desktop Environment: GNOME Shell
-        - Component Version / Git Commit:
+      description: Linux distribution (name and version) and any other environment details.
+      placeholder: |
+        - OS / Distro: Ubuntu 24.04 LTS
+        - Other details: ...
+    validations:
+      required: true
+  - type: dropdown
+    id: display_server
+    attributes:
+      label: Display Server
+      description: The session display server the defect occurs under.
+      options:
+        - Wayland
+        - X11
+        - Both (XWayland sessions)
+        - Not sure
+    validations:
+      required: true
+  - type: dropdown
+    id: desktop_environment
+    attributes:
+      label: Desktop Environment
+      description: The desktop environment in use. Choose "Other" and describe it in the environment details if it is not listed.
+      options:
+        - GNOME
+        - KDE Plasma
+        - Sway
+        - Other (describe in environment details)
+        - Not sure
     validations:
       required: true
   - type: textarea
@@ -61,7 +92,7 @@ body:
     attributes:
       label: Expected vs. Actual Behavior
       description: What was expected to occur versus what actually took place?
-      placeholder: Expected behavior: ... Actual behavior: ...
+      placeholder: "Expected behavior: ... Actual behavior: ..."
     validations:
       required: true
   - type: textarea
