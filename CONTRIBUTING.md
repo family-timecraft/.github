@@ -11,35 +11,15 @@ TimeCraft is maintained by a small maintainer team during active development.
 Pull requests carrying unsolicited code will not be merged; maintainers may
 convert such a pull request into an issue so the idea behind it is not lost.
 
-In this organization, "contributing" means feedback:
+In this organization, "contributing" means feedback: bug reports, suggestions,
+and comments. How to file feedback that maintainers can act on quickly — what
+a good bug report contains and how to write an effective suggestion — is
+documented in the [support guide](./SUPPORT.md).
 
-- **Bug reports** — reproducible defects in any published component.
-- **Suggestions** — feature ideas, improvements, and ideas for the preset
-  catalog.
-- **Comments** — feedback on issues, plans, and documentation.
-
-## Where to file feedback
-
-Use the issue tracker of the affected repository — every repository accepts
-bug reports and suggestions through issue forms. If you are unsure where a
-report belongs, open it in the repository closest to the behavior you
-observed.
-
-Security-sensitive reports must follow the [security policy](./SECURITY.md)
-instead of public issue filing.
-
-## Reporting bugs
-
-A good bug report states the component version, your operating environment
-(distribution, display server, desktop environment), precise reproduction
-steps, and expected versus actual behavior. Attach relevant logs where
-possible.
-
-## Making suggestions
-
-Describe the problem you are trying to solve before the solution you have in
-mind. Suggestions that name the affected family workflow, the component, and
-the acceptance criteria are the easiest to act on.
+Use the issue tracker of the affected repository; every published repository
+accepts bug reports and suggestions through issue forms. Security-sensitive
+reports must follow the [security policy](./SECURITY.md) instead of public
+issue filing.
 
 ## Maintainer working agreements
 
